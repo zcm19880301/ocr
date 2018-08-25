@@ -1,37 +1,21 @@
-# ocr
+﻿# ocr-client：箱号识别系统-客户端
 
-#### 项目介绍
-箱号识别项目
+## 功能列表
 
-#### 软件架构
-软件架构说明
+## 基础架构搭建
+- [x] Springboot客户端搭建
+- [x] 系统框架搭建
 
+### 客户端功能列表
+- [x] 提供http接口，上传文件和参数
+- [x] 存储上传的图片和参数
+- [x] 调用python提供的http接口，告知图片地址，告知参数让其解析；
+- [x] python解析完成，返回内容，存储，返回给使用者。
+- [x] 发起异步任务，让图片执行同步服务器操作
+- [x] 提供接口，让服务端定时通知这里，存储好数据给python用。
 
-#### 安装教程
+### 服务端功能列表
+- [x] 提供接口：同步图片服务；
+- [x] 提供接口，给python算法调用，将python的算法结果，推送到客户端中。 
+  
 
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 使用说明
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 参与贡献
-
-1. Fork 本项目
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
-
-
-#### 码云特技
-
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
