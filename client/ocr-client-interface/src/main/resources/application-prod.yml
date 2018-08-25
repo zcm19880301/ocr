@@ -1,0 +1,10 @@
+db:
+  url:  jdbc:oracle:thin:@172.16.168.12:1521:zhdb
+  username: kpi
+  password: Zpmckpi1234
+
+logging:
+  file: ocr-client.log
+  level:
+    ROOT: INFO
+    com.zpmc.kpi: debug

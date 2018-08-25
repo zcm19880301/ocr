@@ -1,0 +1,37 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+<h1>文件上传：</h1>
+<div>
+    <span th:text="${uploadResult}">上传成功</span>
+</div>
+
+<div>
+    <form method="POST" enctype="multipart/form-data" action="/ocr/check">
+
+        <div>
+            <span>file:</span> <input type="file" name="files"/>
+        </div>
+        <div>
+            <span>file:</span> <input type="file" name="files"/>
+        </div>
+
+        <div>
+            <span>file:</span> <input type="file" name="files"/>
+        </div>
+        <div>
+            <span>file:</span> <input type="file" name="files"/>
+        </div>
+        <div>
+            <span>content:</span><label>
+            <input type="text" name="content"/>
+        </label>
+        </div>
+        <div>
+            <span>submit</span><input type="submit" value="Upload"/>
+        </div>
+    </form>
+</div>
+
+
+</body>
+</html>
